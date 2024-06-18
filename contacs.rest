@@ -3,12 +3,12 @@
 GET http://localhost:3000/contacts
 
 ### GET specific contact
-GET http://localhost:3000/contacts/6670a2f8f0b37ceca5fcef0d
+GET http://localhost:3000/contacts/6670d700c69d69d6e5366d06
 
 
 // PRODUCTION
 ### GET all contacts
-GET https://cse341-contacts-gm00.onrender.com/contacts
+GET https://cse341-contacts-6y6j.onrender.com/contacts
 
 ### GET specific contact
-GET https://cse341-contacts-gm00.onrender.com/contacts/6670a2f8f0b37ceca5fcef0d
+GET https://cse341-contacts-6y6j.onrender.com/contacts/6670d700c69d69d6e5366d06
