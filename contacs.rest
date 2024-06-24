@@ -1,14 +1,49 @@
-// LOCAL
-### GET all contacts
-GET http://localhost:3000/contacts
+### Add contact (POST) POST http://localhost:3000/contacts Content-Type: application/json
 
-### GET specific contact
-GET http://localhost:3000/contacts/6670d700c69d69d6e5366d06
+{
+   
+    "firstName": "Luis",
+    "lastName": "Martínez",
+    "email": "lm@martinez.net",
+    "favoriteColor": "Purple",
+    "birthday": "6/6/1966"
+  }
 
+### Update contact (PUT) PUT http://localhost:3000/contacts/6670d722c69d69d6e5366d07 Content-Type: application/json
+  {
+    
+    "firstName": "Alina",
+    "lastName": "Hernández",
+    "email": "ah@hernandez.net",
+    "favoriteColor": "Green",
+    "birthday": "6/6/1996"
+  }
+### Delete Contact DELETE http://localhost:3000/contacts/6670d767c69d69d6e5366d09
 
-// PRODUCTION
-### GET all contacts
-GET https://cse341-contacts-6y6j.onrender.com/contacts
+// PRODUCTION ### GET home GET https://cse341-contacts-6y6j.onrender.com/
 
-### GET specific contact
-GET https://cse341-contacts-6y6j.onrender.com/contacts/6670d700c69d69d6e5366d06
+### GET all contacts GET https://cse341-contacts-6y6j.onrender.com/contacts
+
+### GET specific contact GET https://cse341-contacts-6y6j.onrender.com/contacts/66670d722c69d69d6e5366d07
+
+### Add contact (POST contact) POST https://cse341-contacts-6y6j.onrender.com/contacts Content-Type: application/json
+
+  {
+    
+    "firstName": "Alina",
+    "lastName": "Hernández",
+    "email": "ah@hernandez.net",
+    "favoriteColor": "Green",
+    "birthday": "6/6/1996"
+  }
+### Change contact information (PUT) PUT https://cse341-contacts-6y6j.onrender.com/contacts/6670a374f0b37ceca5fcef0f Content-Type: application/json
+
+  {
+    
+    "firstName": "Alina",
+    "lastName": "Hernández",
+    "email": "ah@hernandez.net",
+    "favoriteColor": "Green",
+    "birthday": "6/6/1996"
+  }
+### Remove a contact (DELETE) DELETE https://cse341-contacts-6y6j.onrender.com/contacts/66670d767c69d69d6e5366d09
